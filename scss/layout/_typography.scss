@@ -1,0 +1,14 @@
+.title {
+    font: 700 52px/69.32px $title;
+    text-transform: uppercase;
+
+    &--header {
+        font-size: 62px;
+        line-height: 100px;
+
+    }
+}
+
+.subtitle {
+    font: 500 24px/35px $font;
+}

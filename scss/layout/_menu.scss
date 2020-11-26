@@ -1,0 +1,24 @@
+.menu {
+    margin: 0 36.82% 0 40px;
+
+    &__list {
+    display: flex;
+    flex-direction: row;
+    }
+
+    &__item {
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #383838;
+        white-space: nowrap;
+        font-size: 18px;
+    }
+
+}
