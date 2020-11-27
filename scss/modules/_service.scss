@@ -1,0 +1,81 @@
+.service {
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 75px;
+    }
+
+    &__wrapp {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 100px;
+        justify-content: space-between;
+    }
+
+    &__img {
+        margin: 0 auto 0 0em;
+        &--right {
+            margin: 0 0em 0 auto;
+        }
+    }
+
+    &__pic {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #615F5B;
+    }
+
+    &__box {
+        margin-left: 140px;
+        max-width: 41.6%;
+        margin-right: 140px;
+    }
+
+    &__subtitle {
+        font: 700 28px/40px $title;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        max-width: 78.9%;
+        line-height: 25px;
+        margin-bottom: 55px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__price-sub {
+        text-transform: uppercase;
+        background: #F2F2F2;
+        margin-bottom: 15px;
+    }
+
+    &__prices {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &:nth-of-type(3), &:nth-of-type(6) {
+            margin-bottom: 50px;
+        }
+
+    }
+
+    &__price-text {
+        margin-bottom: 20px;
+
+    }
+
+    &__icons {
+        color: $pink;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 40px;
+    }
+}

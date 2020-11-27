@@ -12,13 +12,6 @@
         // text-align: center;
     }
 
-    &__img {
-
-        &--right {
-
-        }
-    }
-
     &__box {
         border: 1px solid #F79595;
         margin: 0 30px;
@@ -35,6 +28,12 @@
     &__text {
         font-size: 18px;
         line-height: 35px;
+    }
+
+    &__pic {
+        // max-width: 100%;
+        // width: 375px;
+        // height: 100%;
     }
 
 }

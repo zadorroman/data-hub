@@ -1,0 +1,79 @@
+.subscriptions {
+    margin-bottom: 150px;
+
+
+    &__subscription {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #F79595;
+        flex-grow: 1;
+        padding: 25px 15px ;
+        max-width: 20.15%;
+        margin-right: 10px;
+    }
+
+    &__wrapp {
+        display: flex;
+        justify-content: center;
+        display: flex;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__title {
+        font: 700 32px/40px $title;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 15px;
+    }
+
+    &__btn {
+        margin-bottom: 15px;
+    }
+
+    &__item {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        position: relative;
+        margin-left: 30px;
+
+        &:last-child {
+            margin-bottom: 175px;
+        }
+
+        &::before {
+            @include size(0px, 12px);
+            @include pos($t:20%, $l:-25px);
+            content: '';
+            border: solid $black;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 2px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+    }
+
+    &__price {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    &__button {
+        text-align: center;
+    }
+}

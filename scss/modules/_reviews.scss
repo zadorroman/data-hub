@@ -1,0 +1,72 @@
+.reviews {
+    &__title {
+        text-transform: none;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        line-height: 35px;
+        margin-bottom: 90px;
+    }
+
+    &__comment {
+        border: 1px solid #F2F2F2;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        max-width: 52.71%;
+        padding: 25px 50px;
+        margin-bottom: 225px;
+        position: relative;
+        background: #fff;
+
+        &::before {
+            @include pos($t: 30%, $l:628px, $z: -1);
+            @include size(506px, 674px);
+
+            content: '';
+            background: url('../images/reviews1.jpg') no-repeat center center;
+            transform: translateY(-50%);
+        }
+
+        &::after {
+            @include pos($t: 30%, $l:945px, $z: -2);
+            @include size(506px, 674px);
+
+            content: '';
+            background: url('../images/reviews2.jpg') no-repeat center center;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 35px;
+        margin-bottom: 110px;
+    }
+
+    &__author {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+
+    &__town {
+        margin-bottom: 10px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    &__stars {
+        font-size: 25px;
+        color: $pink;
+        max-width: 24.08%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+}
