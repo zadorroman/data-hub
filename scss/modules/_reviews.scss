@@ -17,7 +17,7 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         max-width: 52.71%;
         padding: 25px 50px;
-        margin-bottom: 225px;
+        margin-bottom: 25px;
         position: relative;
         background: #fff;
 
@@ -68,5 +68,10 @@
         flex-direction: row;
         justify-content: space-between;
 
+    }
+
+    &__arrows {
+        margin-bottom: 150px;
+        margin-left: 220px;
     }
 }

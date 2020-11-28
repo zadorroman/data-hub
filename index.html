@@ -30,16 +30,16 @@
 				<div class="menu">
 					<ul class="menu__list">
 						<li class="menu__item">
-							<a href="#" class="menu__link">Локации</a>
+							<a href="#service" class="menu__link">Локации</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">Тарифы</a>
+							<a href="#subscriptions" class="menu__link">Тарифы</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">О нас</a>
+							<a href="#about" class="menu__link">О нас</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">Контакты</a>
+							<a href="#footer" class="menu__link">Контакты</a>
 						</li>
 					</ul>
 				</div>
@@ -57,7 +57,7 @@
 		</div>
 		<img src="images/header.jpg" alt="header.jpg" class="header__img">
 	</header>
-	<section class="about">
+	<section id="about" class="about">
 		<div class="container container--wrap">
 			<div class="about__wrap">
 				<div class="about__text">
@@ -165,12 +165,25 @@
 		</div>
 	</section>
 
-	<section class="service">
+	<section id="service" class="service">
 		<h2 class="service__title title">Наши Услуги</h2>
 		<div class="service__wrapp">
 			<div class="service__img">
+				<div class="service__arrows arrows">
+					<div class="arrows__border">
+						<div class="arrows__arrow"></div>
+					</div>
+					<div class="arrows__circle"></div>
+					<div class="arrows__circle arrows__circle--empty"></div>
+					<div class="arrows__circle arrows__circle--empty"></div>
+					<div class="arrows__border arrows__border--right">
+						<div class="arrows__arrow arrows__arrow--right"></div>
+					</div>
+
+				</div>
 				<img src="images/services.jpg" alt="service.jpg" class="service__pic">
 			</div>
+
 			<div class="service__box">
 				<h2 class="service__subtitle">Коворкинг на м.Шулявская</h2>
 				<p class="service__text">Многофункциональный Open Space расположен в тихом уютном месте, во дворе,
@@ -270,11 +283,35 @@
 				</div>
 			</div>
 			<div class="service__img service__img--right">
+				<div class="service__arrows service__arrows--right arrows">
+					<div class="arrows__border">
+						<div class="arrows__arrow"></div>
+					</div>
+					<div class="arrows__circle"></div>
+					<div class="arrows__circle arrows__circle--empty"></div>
+					<div class="arrows__circle arrows__circle--empty"></div>
+					<div class="arrows__border arrows__border--right">
+						<div class="arrows__arrow arrows__arrow--right"></div>
+					</div>
+
+				</div>
 				<img src="images/services2.jpg" alt="service2.jpg" class="service__pic">
 			</div>
 		</div>
 		<div class="service__wrapp">
 			<div class="service__img">
+				<div class="service__arrows arrows">
+					<div class="arrows__border">
+						<div class="arrows__arrow"></div>
+					</div>
+					<div class="arrows__circle"></div>
+					<div class="arrows__circle arrows__circle--empty"></div>
+					<div class="arrows__circle arrows__circle--empty"></div>
+					<div class="arrows__border arrows__border--right">
+						<div class="arrows__arrow arrows__arrow--right"></div>
+					</div>
+
+				</div>
 				<img src="images/services3.jpg" alt="service3.jpg" class="service__pic">
 			</div>
 			<div class="service__box">
@@ -328,7 +365,7 @@
 
 	</section>
 
-	<section class="subscriptions">
+	<section id="subscriptions" class="subscriptions">
 		<div class="container container--wrap">
 			<div class="subscriptions__wrapp">
 				<div class="subscriptions__subscription">
@@ -432,7 +469,7 @@
 	<section class="reviews">
 		<div class="container container--wrap">
 			<h2 class="reviews__title title">Отзывы</h2>
-			<p class="reviews__subtitle">Уже 2975 довольных клиентов!
+			<p class="reviews__subtitle">Уже 2975 довольных клиентов!<br>
 				Ты следующий?</p>
 			<div class="reviews__comment">
 				<p class="reviews__text">
@@ -453,10 +490,65 @@
 					<i class="icon-star"></i>
 				</div>
 			</div>
+			<div class="reviews__arrows arrows">
+				<div class="arrows__border">
+					<div class="arrows__arrow"></div>
+				</div>
+				<div class="arrows__circle"></div>
+				<div class="arrows__circle arrows__circle--empty"></div>
+				<div class="arrows__circle arrows__circle--empty"></div>
+				<div class="arrows__border arrows__border--right">
+					<div class="arrows__arrow arrows__arrow--right"></div>
+				</div>
+
+			</div>
 		</div>
 
 	</section>
-	<div class="sad">asd</div>
+	<footer id="footer" class="footer">
+		<div class="container container--wrap">
+			<div class="footer__maps">
+				<div class="footer__map"><img src="images/map1.jpg" alt="map1.jpg" class="footer__img"></div>
+				<div class="footer__map"><img src="images/map2.jpg" alt="map2.jpg" class="footer__img"></div>
+				<div class="footer__map"><img src="images/map3.jpg" alt="map3.jpg" class="footer__img"></div>
+			</div>
+			<div class="footer__info">
+				<div class="footer__contacts">
+					<a href="tel:+380677715236" class="footer__mob"><i class="icon-mob"></i>+38 (067) 771 52 36</a>
+					<a href="mailto:hello@data-hub.com.ua" class="footer__mail"> <i class="icon-mail"></i>
+						hello@data-hub.com.ua</a>
+				</div>
+				<div class="footer__subscribe">
+					<input type="text" class="footer__input" name="sub" placeholder="Email
+					">
+					<button type="button" class="footer__btn btn btn--footer ">Подписаться</button>
+					<p class="footer__text">
+						Получайте наши новости и акции на свой электронный адрес.
+
+					</p>
+				</div>
+			</div>
+			<div class="footer__icons">
+				<div class="logo">
+					<a href="#" class="logo__link">
+						<img src="images/Logo.svg" alt="logo.svg" class="logo__img">
+					</a>
+				</div>
+				<div class="footer__icon">
+					<i class="icon-insta1"></i>
+					<i class="icon-twit"></i>
+					<i class="icon-face"></i>
+				</div>
+			</div>
+
+			<div class="footer__copy">
+				<p class="footer__copy-text ">Все права защищены</p>
+				<p> &copy; 2020</p>
+			</div>
+
+		</div>
+
+	</footer>
 
 	<!-- <i class="icon-bulb"></i>
 	<i class="icon-chair"></i>
