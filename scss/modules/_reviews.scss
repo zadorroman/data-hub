@@ -31,8 +31,8 @@
         }
 
         &::after {
-            @include pos($t: 30%, $l:945px, $z: -2);
-            @include size(506px, 674px);
+            @include pos($t: 30%, $l:1090px, $z: -2);
+            @include size(185px, 500px);
 
             content: '';
             background: url('../images/reviews2.jpg') no-repeat center center;
