@@ -15,7 +15,7 @@
     &__box {
         border: 1px solid $pink;
         margin: 0 30px;
-        padding: 95px 135px 95px 110px;
+        padding: 95px 5% 95px 5%;
     }
     &__subtitle {
         text-transform: uppercase;
@@ -31,9 +31,9 @@
     }
 
     &__pic {
-        // max-width: 100%;
-        // width: 375px;
-        // height: 100%;
+        max-width: 375px;
+        height: 100%;
+        width: auto;
     }
 
 }

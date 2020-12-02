@@ -8,7 +8,7 @@
 
 img {
 	max-width: none;
-	height: auto;
+	height: 100%;
 }
 
 html {
@@ -35,3 +35,48 @@ body {
 		text-decoration: none;
 	}
 }
+
+
+
+.radio {
+	display: inline-block;
+	&__input {
+		display: none;
+
+		&:checked + .radio__label {
+			background: $pink;
+			color: #fff;
+
+			&:hover {
+				background-color:  #FEF1EA;
+				color: $black;
+			}
+		}
+	}
+	&__label {
+		max-width: 115px;
+		padding: 10px 50px;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		cursor: pointer;
+		border: 1px solid $pink;
+		transition: all .3s;
+		font-size: 11px;
+		line-height: 13px;
+
+		&--alone {
+			padding: 10px 70px;
+			max-width: 220px;
+			white-space: nowrap;
+		}
+
+		&:hover {
+			background-color:  #FEF1EA;
+		}
+	}
+
+	
+}
+
+

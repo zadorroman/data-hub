@@ -7,8 +7,15 @@
         align-items: center;
         margin-top: 20px;
         margin-bottom: 80px;
-        margin-right: 15px;
+        justify-content: space-between;
+
+        &-wrap {
+            display: flex;
+            align-items: center;
+
+        }
     }
+    
 
     &__link {
         text-decoration: none;

@@ -17,19 +17,16 @@
     }
 
     &__img {
-
+        
         position: relative;
-
-        &--right {
-            margin: 0 0em 0 auto;
-        }
+        
     }
 
     &__pic {
-        max-width: none;
-        height: auto;
+        max-width: 705px;
+        height: 100%;
         border: 1px solid #615F5B;
-        margin: 0 auto 0 0em;
+
     }
 
     &__arrows {
@@ -42,9 +39,12 @@
     }
 
     &__box {
-        margin-left: 140px;
-        max-width: 41.6%;
-        margin-right: 140px;
+        margin: 0 auto 0 10%;
+        max-width: 520px;
+
+        &--right {
+            margin: 0 10% 0 auto;
+        }
     }
 
     &__subtitle {

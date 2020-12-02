@@ -1,16 +1,16 @@
 .subscriptions {
     margin-bottom: 150px;
 
-
     &__subscription {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         border: 1px solid $pink;
+                justify-content: space-between;
         flex-grow: 1;
         padding: 25px 15px ;
         max-width: 20.15%;
         margin-right: 10px;
+
     }
 
     &__wrapp {
@@ -35,10 +35,18 @@
         font-size: 14px;
         line-height: 17px;
         margin-bottom: 15px;
+        max-width: 190px;
+
+
+        &--margin {
+            margin-bottom: 30px;
+            height: 51px;
+        }
     }
 
     &__btn {
         margin-bottom: 15px;
+        display: flex;
     }
 
     &__item {
