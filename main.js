@@ -3,10 +3,14 @@
 (function () {
 
     //open windows    
-    let openBtn = document.querySelector('.header__link'),
-        rentBtn = document.querySelector('.subscriptions__link');
+    let openBtn = document.querySelector('.header__link');
+
     openBtn.addEventListener('click', callBtn);
-    rentBtn.addEventListener('click', rentBtnFun);
+    let rentBtns = document.querySelectorAll('.subscriptions__link');
+    rentBtns.forEach((elem) => {
+        elem.addEventListener('click', rentBtnFun);
+    })
+
 
     //close windows
     let closelBtn = document.querySelector('.call__close'),
@@ -19,6 +23,8 @@
     closelBtnRent.addEventListener('click', rentBtnFun);
     sendBtnRent.addEventListener('click', rentBtnFun);
 })();
+
+
 
 function callBtn() {
     let call = document.querySelector('.call');
