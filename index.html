@@ -45,7 +45,7 @@
 						</ul>
 					</div>
 				</div>
-				<a href="#" class="header__link">Обратный звонок</a>
+				<a href="#call" class="header__link">Обратный звонок</a>
 			</nav>
 			<h1 class="header__title title title--header"> Коворкинг-центры</h1>
 			<div class="header__wrap">
@@ -53,13 +53,29 @@
 					Мы берем на себя все, мешающее вашей работе.
 				</h2>
 				<div class="header__btn">
-					<a href="#" class="btn btn--header">Арендовать</a>
+					<a href="#rent" class="btn btn--header">Арендовать</a>
 				</div>
 			</div>
 		</div>
 		<img src="images/header.jpg" alt="header.jpg" class="header__img">
-		<div class="call">
+		<div class="call" id="call">
+			<div class="call__wrap">
+				<h2 class="call__title">
+					Обратный звонок
+				</h2>
+				<div class="call__box">
+					<input type="text" placeholder="Ваше имя" class="call__input">
+					<input type="text" placeholder="+38(0__)__-___" class="call__input">
+				</div>
 
+				<div class="call__btn">
+					<a href="#" class="btn btn--call">Отправить заявку</a>
+				</div>
+
+				<div class="call__close">
+				</div>
+
+			</div>
 		</div>
 	</header>
 	<section id="about" class="about">
@@ -426,6 +442,12 @@
 							<li class="subscriptions__item">Кофе, чай, вода, печенье</li>
 							<li class="subscriptions__item">Принтер, МФУ</li>
 						</ul>
+						<ul class="subscriptions__list subscriptions__list--first">
+							<li class="subscriptions__item">Занятое рабочее место</li>
+							<li class="subscriptions__item">2 гига на интернет</li>
+							<li class="subscriptions__item">Максимум вода</li>
+							<li class="subscriptions__item">Принтер если попросишь соседа</li>
+						</ul>
 					</div>
 					<div class="subscriptions__box">
 						<div class="subscriptions__price">
@@ -433,7 +455,7 @@
 						</div>
 
 						<div class="subscriptions__button">
-							<a href="#" class="btn btn--subscriptions subscriptions__link">Арендовать</a>
+							<a href="#rent" class="btn btn--subscriptions subscriptions__link">Арендовать</a>
 						</div>
 					</div>
 				</div>
@@ -473,7 +495,7 @@
 						</div>
 
 						<div class="subscriptions__button">
-							<a href="#" class="btn btn--subscriptions subscriptions__link">Арендовать</a>
+							<a href="#rent" class="btn btn--subscriptions subscriptions__link">Арендовать</a>
 						</div>
 					</div>
 				</div>
@@ -514,7 +536,7 @@
 						</div>
 
 						<div class="subscriptions__button">
-							<a href="#" class="btn btn--subscriptions subscriptions__link">Арендовать</a>
+							<a href="#rent" class="btn btn--subscriptions subscriptions__link">Арендовать</a>
 						</div>
 					</div>
 
@@ -550,14 +572,41 @@
 						</div>
 
 						<div class="subscriptions__button">
-							<a href="#" class="btn btn--subscriptions subscriptions__link">Арендовать</a>
+							<a href="#rent" class="btn btn--subscriptions subscriptions__link">Арендовать</a>
 						</div>
 					</div>
 				</div>
 
 			</div>
+			<div class="call call--rent" id="rent">
+				<div class="call__wrap call__wrap--rent">
+					<h2 class="call__title">
+						Оставить заявку
+					</h2>
+					<div class="call__box call__box--rent">
+						<input type="text" placeholder="Ваше имя" class="call__input">
+						<input type="text" placeholder="+38(0__)__-___" class="call__input">
+						<input type="text" placeholder="Ваш E-mail" class="call__input">
+						<select name="rent" id="" class="call__select">
+							<option value="guest" class="call__option">Гость</option>
+							<option value="guest" selected class="call__option">Резидент</option>
+							<option value="guest" class="call__option">Office</option>
+							<option value="guest" class="call__option">Office+</option>
+						</select>
+						<input type="text" placeholder="дд.мм.гггг" class="call__input">
+					</div>
+
+					<div class="call__btn call__btn--rent">
+						<a href="#rent" class="btn btn--call">Забронировать место</a>
+					</div>
+
+					<div class="call__close call__close--rent">
+					</div>
+
+				</div>
 
 
+			</div>
 		</div>
 	</section>
 
@@ -670,6 +719,7 @@
 	<i class="icon-twit"></i>
 	<i class="icon-vacuum-cleaner"></i>
 	<i class="icon-wifi"></i> -->
+	<script src="main.js"></script>
 </body>
 
 </html>

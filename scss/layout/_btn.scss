@@ -33,4 +33,8 @@
         line-height: 17px;
         @include size(195px, 45px);
     }
+
+    &--call {
+        text-transform: none;
+    }
 }
