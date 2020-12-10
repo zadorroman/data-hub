@@ -22,19 +22,19 @@
         position: relative;
         transition: all .5s;
         display: inline-block;
-
+        transition: all .6s;
 
         &::before {
-            @include pos($l:0, $t:0);
-            @include size(0%, 100%);
+            @include pos($l:0, $b:0);
+            @include size(0%, 3px);
 
             content: '';
             background-color: $pink;
-            transition: all .3s;
+        transition: all .6s;
         }
 
         &:hover::before {
-             @include size(100%);
+             @include size(100%, 3px);
              z-index: -1;
         }
 

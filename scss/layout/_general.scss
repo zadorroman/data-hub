@@ -79,9 +79,31 @@ body {
 	
 }
 
-input:focus {
-	background-color: #FFF19B;
-	transition: all .3s;
+input {
+	border: 2px solid transparent;
+
+	&:focus {
+		border-color: $pink;
+		background-color: #FEE0D5;;
+		transition: all .3s;
+	}
+
+	&:not(:placeholder-shown) {
+		border-color: #1C9654;
+		background-color: #B2FAB1;;
+	}
 }
+
+select {
+	border: 1px solid transparent;
+
+	&:focus {
+		border-color: #1C9654;
+		background-color: #B2FAB1;;
+		transition: all .3s;
+	}
+}
+
+
 
 

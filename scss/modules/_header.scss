@@ -24,12 +24,41 @@
         font-weight: 500;
         font-size: 18px;
         position: relative;
+        transition: all .6s;
+        
+        // &:hover {
+        //     color: #fff;
+        // }
 
-        &::after {
-            @include size(100%, 3px);
-            @include pos($b:0, $l:0);
+        // &::after {
+        //     @include size(100%, 3px);
+        //     @include pos($b:0, $l:0px);
+        //     content: '';
+        //     background: $pink;
+        //     transition: all .6s;
+        //     z-index: -1;
+        //     border-radius: 15px;
+        // }
+
+        // &:hover::after {
+        //     @include size(100%, 105%);
+        // }
+        &::before {
+            @include pos($l:0, $b:0);
+            @include size(0%, 3px);
+
             content: '';
-            background: $pink;
+            background-color: $pink;
+        transition: all .6s;
+        }
+
+        &:hover::before {
+             @include size(100%, 3px);
+             z-index: -1;
+        }
+
+        &:active::before {
+            background-color: $bpink;
         }
     }
 
