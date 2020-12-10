@@ -84,23 +84,21 @@ input {
 
 	&:focus {
 		border-color: $pink;
-		background-color: #FEE0D5;;
 		transition: all .3s;
 	}
 
 	&:not(:placeholder-shown) {
-		border-color: #1C9654;
-		background-color: #B2FAB1;;
+		border-color: $pink;
 	}
 }
 
 select {
 	border: 1px solid transparent;
+	transition: all .3s;
 
 	&:focus {
-		border-color: #1C9654;
-		background-color: #B2FAB1;;
-		transition: all .3s;
+		border-color: $pink;
+
 	}
 }
 
