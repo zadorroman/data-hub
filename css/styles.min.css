@@ -138,6 +138,12 @@ body {
   background-color: #FEF1EA;
 }
 
+input:focus {
+  background-color: #FFF19B;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 @font-face {
   font-family: "icomoon";
   font-weight: normal;
@@ -271,6 +277,32 @@ body {
   color: #383838;
   white-space: nowrap;
   font-size: 18px;
+  position: relative;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  display: inline-block;
+}
+
+.menu__link::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  content: '';
+  background-color: #F79595;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.menu__link:hover::before {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.menu__link:active::before {
+  background-color: #B14B5C;
 }
 
 .btn {

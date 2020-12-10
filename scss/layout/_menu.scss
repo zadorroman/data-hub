@@ -19,6 +19,28 @@
         color: #383838;
         white-space: nowrap;
         font-size: 18px;
+        position: relative;
+        transition: all .5s;
+        display: inline-block;
+
+
+        &::before {
+            @include pos($l:0, $t:0);
+            @include size(0%, 100%);
+
+            content: '';
+            background-color: $pink;
+            transition: all .3s;
+        }
+
+        &:hover::before {
+             @include size(100%);
+             z-index: -1;
+        }
+
+        &:active::before {
+            background-color: $bpink;
+        }
     }
 
 }
