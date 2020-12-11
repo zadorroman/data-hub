@@ -1,6 +1,6 @@
 .call {
     @include size(100%);
-    @include pos(fixed, $t:0, $l:0, $z:1111);
+    @include pos(fixed, $t:0, $l:0, $z:1112);
     display: none;
     background-color: rgba(0, 0, 0, .5);
     animation: toggleBtn .3s linear forwards;
@@ -103,7 +103,8 @@
     &__btn {
         text-transform: none;
         text-align: center;
-        cursor: pointer;
+        max-width: 240px;
+        margin: 0 auto;
     }
 
 }

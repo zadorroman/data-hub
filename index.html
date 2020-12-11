@@ -20,33 +20,38 @@
 
 <body>
 	<header class="header">
+		<div class="header__block">
+			<div class="container container--wrap">
+				<nav class="header__nav">
+					<div class="header__nav-wrap">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								<img src="images/Logo.svg" alt="logo.svg" class="logo__img">
+							</a>
+						</div>
+						<div class="menu">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#service" class="menu__link">Локации</a>
+								</li>
+								<li class="menu__item">
+									<a href="#subscriptions" class="menu__link">Тарифы</a>
+								</li>
+								<li class="menu__item">
+									<a href="#about" class="menu__link">О нас</a>
+								</li>
+								<li class="menu__item">
+									<a href="#footer" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="#call" class="header__link">Обратный звонок</a>
+				</nav>
+			</div>
+		</div>
 		<div class="container container--wrap">
-			<nav class="header__nav">
-				<div class="header__nav-wrap">
-					<div class="logo">
-						<a href="#" class="logo__link">
-							<img src="images/Logo.svg" alt="logo.svg" class="logo__img">
-						</a>
-					</div>
-					<div class="menu">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a href="#service" class="menu__link">Локации</a>
-							</li>
-							<li class="menu__item">
-								<a href="#subscriptions" class="menu__link">Тарифы</a>
-							</li>
-							<li class="menu__item">
-								<a href="#about" class="menu__link">О нас</a>
-							</li>
-							<li class="menu__item">
-								<a href="#footer" class="menu__link">Контакты</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<a href="#call" class="header__link">Обратный звонок</a>
-			</nav>
+
 			<h1 class="header__title title title--header"> Коворкинг-центры</h1>
 			<div class="header__wrap">
 				<h2 class="header__subtitle subtitle">Твое комфортное рабочее место.<br>
@@ -69,7 +74,7 @@
 				</div>
 
 				<div class="call__btn">
-					<a href="#" class="btn btn--call">Отправить заявку</a>
+					<a href="javascript:void(0)" class="btn btn--call">Отправить заявку</a>
 				</div>
 
 				<div class="call__close">
@@ -443,10 +448,9 @@
 							<li class="subscriptions__item">Принтер, МФУ</li>
 						</ul>
 						<ul class="subscriptions__list subscriptions__list--first">
-							<li class="subscriptions__item">Занятое рабочее место</li>
-							<li class="subscriptions__item">2 гига на интернет</li>
-							<li class="subscriptions__item">Максимум вода</li>
-							<li class="subscriptions__item">Принтер если попросишь соседа</li>
+							<li class="subscriptions__item">Свободное рабочее место</li>
+							<li class="subscriptions__item">Безлимитный интернет</li>
+							<li class="subscriptions__item">Кофе, чай, вода, печенье</li>
 						</ul>
 					</div>
 					<div class="subscriptions__box">
@@ -487,6 +491,11 @@
 							<li class="subscriptions__item">Кофе, чай, вода, печенье</li>
 							<li class="subscriptions__item">Переговорная</li>
 							<li class="subscriptions__item">Принтер, МФУ</li>
+						</ul>
+						<ul class="subscriptions__list subscriptions__list--first">
+							<li class="subscriptions__item">Свободное рабочее место1</li>
+							<li class="subscriptions__item">Безлимитный интернет1</li>
+							<li class="subscriptions__item">Кофе, чай, вода, печенье1</li>
 						</ul>
 					</div>
 					<div class="subscriptions__box">
@@ -632,6 +641,7 @@
 					<a href="#" class="reviews__link"><i class="icon-star"></i></a>
 					<a href="#" class="reviews__link"><i class="icon-star"></i></a>
 					<a href="#" class="reviews__link"><i class="icon-star"></i></a>
+					<a href="#" class="reviews__link reviews__link--empty"><i class="icon-star"></i></a>
 				</div>
 				<img src="images/reviews1.jpg" alt="reviews1.jpg" class="reviews__pic">
 				<img src="images/reviews2.jpg" alt="reviews2.jpg" class="reviews__pic-sec">
@@ -688,9 +698,12 @@
 					</a>
 				</div>
 				<div class="footer__icon">
-					<i class="icon-insta1"></i>
-					<i class="icon-twit"></i>
-					<i class="icon-face"></i>
+					<a href="https://www.instagram.com/explore/tags/datahub/" target="_blank" class="footer__social">
+						<i class="icon-insta1"></i></a>
+					<a href="https://github.com/zadorroman" target="_blank" class="footer__social">
+						<i class="icon-twit"></i></a>
+					<a href="https://www.facebook.com/DataHubCoworking" target="_blank" class="footer__social">
+						<i class="icon-face"></i></a>
 				</div>
 			</div>
 

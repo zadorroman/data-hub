@@ -45,22 +45,29 @@ function rentBtnFun() {
     }
 }
 
-let itemCheckbox = document.getElementById('day'),
-    itemCheckboxShu = document.getElementById('wensday');
-itemCheckbox.addEventListener('change', chngeRadio);
-itemCheckboxShu.addEventListener('change', chngeRadio);
 
-function chngeRadio() {
-    let Price = document.querySelector('.subscriptions__price'),
-        list = document.querySelector('.subscriptions__list'),
-        listFirst = document.querySelector('.subscriptions__list--first');
-    if (itemCheckbox.checked) {
-        list.style.display = 'none';
-        listFirst.style.display = 'block';
-        Price.textContent = '200 грн / день';
-    } else if (itemCheckboxShu.checked) {
-        Price.textContent = '1 800 грн / неделя';
-        list.style.display = 'block';
-        listFirst.style.display = 'none';
-    }
-}
+// let itemCheckbox = document.querySelectorAll('input');
+// itemCheckbox.forEach((elem) => {
+//     elem.addEventListener('change', chngeRadio);
+// })
+
+
+// let itemCheckbox = document.querySelectorAll(''),
+//     itemCheckboxShu = document.getElementById('wensday');
+// itemCheckbox.addEventListener('change', chngeRadio);
+// itemCheckboxShu.addEventListener('change', chngeRadio);
+
+// function chngeRadio() {
+//     let Price = document.querySelector('.subscriptions__price'),
+//         list = document.querySelector('.subscriptions__list'),
+//         listFirst = document.querySelector('.subscriptions__list--first');
+//     if (this === checked) {
+//         list.style.display = 'none';
+//         listFirst.style.display = 'block';
+//         Price.textContent = '200 грн / день';
+//     } else if (this.not) {
+//         Price.textContent = '1 800 грн / неделя';
+//         list.style.display = 'block';
+//         listFirst.style.display = 'none';
+//     }
+// }

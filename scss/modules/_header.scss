@@ -1,6 +1,13 @@
 .header {
     margin-bottom: 140px;
 
+    &__block {
+        background-color: #fff;
+        @include size(100%, 80px);
+        @include pos(fixed, $t:0, $z: 1111);
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
+    }
+
     &__nav {
         display: flex;
         flex-direction: row;
@@ -71,6 +78,7 @@
     }
     
     &__title {
+        margin-top: 160px;
         margin-bottom: 10px;
     }
 

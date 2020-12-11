@@ -79,6 +79,7 @@
         font-size: 18px;
         line-height: 25px;
         margin-bottom: 15px;
+        text-align: center;
     }
 
     &__button {
@@ -88,4 +89,12 @@
     &__list--first {
         display: none;
     }
-}   
+
+    &__list--sec {
+        display: none;
+    }
+}
+
+#standart:checked + .subscriptions__list--sec{
+    display: block;
+}
